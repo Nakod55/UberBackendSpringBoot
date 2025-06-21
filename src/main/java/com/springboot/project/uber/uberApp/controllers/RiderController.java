@@ -12,12 +12,6 @@ import org.springframework.web.bind.annotation.*;
 public class RiderController {
     private final RiderService riderService;
 
-//    @RequestMapping(
-//            value = "/rider/requestRide",
-//            method = RequestMethod.POST,           // or POST, PUT, etc.
-//            consumes = "application/json",
-//            produces = "application/json"
-//    )
 @PostMapping("/requestRide")
     public ResponseEntity<RideRequestDto> requestRide(@RequestBody RideRequestDto rideRequestDto){
         return ResponseEntity.ok(riderService.requestRide(rideRequestDto));
