@@ -1,6 +1,5 @@
 package com.springboot.project.uber.uberApp.strategies;
 
-import com.springboot.project.uber.uberApp.dto.RideRequestDto;
 import com.springboot.project.uber.uberApp.entities.Driver;
 import com.springboot.project.uber.uberApp.entities.RideRequest;
 

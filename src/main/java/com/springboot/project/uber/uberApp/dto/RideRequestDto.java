@@ -5,8 +5,6 @@ import com.springboot.project.uber.uberApp.entities.enums.RideRequestStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.springboot.project.uber.uberApp.dto.PointDto;
-import org.locationtech.jts.geom.Point;
 
 import java.time.LocalDateTime;
 
@@ -21,5 +19,6 @@ public class RideRequestDto {
     private LocalDateTime requestedTime;
     private RiderDto rider;
     private PaymentMethod paymentMethod;
+    private Double fare;
     private RideRequestStatus rideRequestStatus;
 }

@@ -6,7 +6,6 @@ import com.springboot.project.uber.uberApp.dto.RideRequestDto;
 import com.springboot.project.uber.uberApp.dto.RiderDto;
 import com.springboot.project.uber.uberApp.entities.Rider;
 import com.springboot.project.uber.uberApp.entities.User;
-import com.springboot.project.uber.uberApp.entities.enums.RideRequestStatus;
 
 import java.util.List;
 
@@ -18,4 +17,5 @@ public interface RiderService {
         RiderDto getMyProfile();
         List<RiderDto> getAllMyRides();
         Rider createNewRider(User user);
+        Rider getCurrentRider();
 }

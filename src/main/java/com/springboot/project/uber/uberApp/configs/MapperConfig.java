@@ -4,7 +4,6 @@ import com.springboot.project.uber.uberApp.dto.PointDto;
 import com.springboot.project.uber.uberApp.utils.GeometryUtil;
 import org.locationtech.jts.geom.Point;
 import org.modelmapper.ModelMapper;
-import org.springframework.boot.Banner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
