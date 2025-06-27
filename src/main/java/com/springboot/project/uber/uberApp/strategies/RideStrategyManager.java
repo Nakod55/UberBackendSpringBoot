@@ -14,10 +14,11 @@ import java.time.LocalTime;
 public class RideStrategyManager {
     private final DriverMatchingHighestRatedDriverStrategy highestRatedDriverStrategy;
     private final DriverMatchingNearestDriverStrategy nearestDriverStrategy;
-    private final RiderFareDefaultFareCalculationStrategy defaultFareCalculationStrategy;
     private final RideFareSurgePricingFareCalculationStrategy surgePricingFareCalculationStrategy;
-    public DriverMatchingStrategy driverMatchingStrategy(double riderRating){
-        if(riderRating>=4.8){
+    private final RiderFareDefaultFareCalculationStrategy defaultFareCalculationStrategy;
+
+    public DriverMatchingStrategy driverMatchingStrategy(double riderRating) {
+        if(riderRating >= 4.8) {
             return highestRatedDriverStrategy;
         }else{
             return nearestDriverStrategy;

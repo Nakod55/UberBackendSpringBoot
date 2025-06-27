@@ -11,6 +11,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+//@Transactional()
 public class DriverMatchingHighestRatedDriverStrategy implements DriverMatchingStrategy {
 
     private final DriverRepository driverRepository;

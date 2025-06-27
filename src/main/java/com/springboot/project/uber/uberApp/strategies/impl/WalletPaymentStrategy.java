@@ -9,6 +9,7 @@ import com.springboot.project.uber.uberApp.repositories.PaymentRepository;
 import com.springboot.project.uber.uberApp.services.PaymentService;
 import com.springboot.project.uber.uberApp.services.WalletService;
 import com.springboot.project.uber.uberApp.strategies.PaymentStrategy;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
